@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<planes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:ns="http://www.example.com/planes" xsi:schemaLocation="http://www.example.com/planes planes.xsd">
+	<plane ID="1" view="capasity" aircompany="airline">
+		<name>An-Mria</name>
+		<year>1988</year>
+		<country>Ukraine</country>
+		<characteristics>
+			<capacity>250</capacity>
+			<passanger>300</passanger>
+			<fuel-weight>300</fuel-weight>
+			<cruising-speed>850</cruising-speed>
+			<range>15400</range>
+			<practical-ceiling>11000</practical-ceiling>
+		</characteristics>
+		<parameters>
+			<length>84</length>
+			<height>88.4</height>
+			<width>18.2</width>
+		</parameters>
+		<price>240</price>
+	</plane>
+	<plane ID="2" view="passenger" aircompany="airline">
+		<name>Airbus</name>
+		<year>2005</year>
+		<country>France</country>
+		<characteristics>
+			<capacity>200</capacity>
+			<passanger>620</passanger>
+			<fuel-weight>248</fuel-weight>
+			<cruising-speed>900</cruising-speed>
+			<range>15200</range>
+			<practical-ceiling>13115</practical-ceiling>
+		</characteristics>
+		<parameters>
+			<length>73</length>
+			<height>79.75</height>
+			<width>24</width>
+		</parameters>
+		<price>390</price>
+	</plane>
+	<plane ID="3" view="passenger" aircompany="airline">
+		<name>Boeing747</name>
+		<year>2010</year>
+		<country>USA</country>
+		<characteristics>
+			<capacity>240</capacity>
+			<passanger>581</passanger>
+			<fuel-weight>230</fuel-weight>
+			<cruising-speed>917</cruising-speed>
+			<range>14100</range>
+			<practical-ceiling>13000</practical-ceiling>
+		</characteristics>
+		<parameters>
+			<length>76.3</length>
+			<height>68.5</height>
+			<width>19.4</width>
+		</parameters>
+		<price>228</price>
+	</plane>
+	<plane ID="4" view="capasity" aircompany="airline">
+		<name>Boeing947</name>
+		<year>1993</year>
+		<country>USA</country>
+		<characteristics>
+			<capacity>320</capacity>
+			<passanger>416</passanger>
+			<fuel-weight>217</fuel-weight>
+			<cruising-speed>912</cruising-speed>
+			<range>14200</range>
+			<practical-ceiling>11700</practical-ceiling>
+		</characteristics>
+		<parameters>
+			<length>73.3</length>
+			<height>69.5</height>
+			<width>20.4</width>
+		</parameters>
+		<price>239</price>
+	</plane>
+</planes>

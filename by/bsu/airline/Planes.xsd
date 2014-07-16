@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.com/Planes"
+	xmlns:tns="http://www.example.com/Planes">
+	<element name="planes">
+
+		<complexType>
+			<sequence>
+				<element name="plane" type="tns:plane" minOccurs="1"
+					maxOccurs="unbounded" />
+			</sequence>
+		</complexType>
+	</element>
+	<complexType name="plane">
+		<sequence>
+			<element name="name" type="string" />
+			<element name="year" type="positiveInteger" />
+			<element name="country" type="string" />
+			<element name="characteristics" type="tns:Characteristics"
+				minOccurs="1" maxOccurs="unbounded" />
+			<element name="parameters" type="tns:Parameters" minOccurs="1"
+				maxOccurs="unbounded" />
+			<element name="price" type="positiveInteger" />
+		</sequence>
+		<attribute name="ID">
+			<simpleType>
+				<restriction base="positiveInteger">
+					<pattern value="(\\w){0, 3}" />
+				</restriction>
+			</simpleType>
+		</attribute>
+		<attribute name="view">
+			<simpleType>
+				<restriction base="string">
+					<enumeration value="passanger"></enumeration>
+					<enumeration value="capasity"></enumeration>
+				</restriction>
+			</simpleType>
+		</attribute>
+		<attribute name="aircompany" type="string" use="required" />
+	</complexType>
+	<complexType name="Characterictics">
+		<sequence>
+			<element name="capasity" type="positiveInteger" />
+			<element name="passanger" type="positiveInteger" />
+			<element name="fuel-weight" type="positiveInteger" />
+			<element name="cruising-speed" type="positiveInteger" />
+			<element name="range" type="positiveInteger" />
+			<element name="practical-ceiling" type="positiveInteger" />
+		</sequence>
+	</complexType>
+	<complexType name="Parameters">
+		<sequence>
+			<element name="length" type="positiveInteger" />
+			<element name="height" type="positiveInteger" />
+			<element name="width" type="positiveInteger" />
+		</sequence>
+	</complexType>
+</schema>
